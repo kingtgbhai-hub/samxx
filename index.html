@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M PARIVAHAN - Download</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #121212; /* Black premium background */
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            padding: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* App Header Section */
+        .app-header {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .app-icon {
+            width: 90px;
+            height: 90px;
+            background-color: #1e1e1e;
+            border-radius: 20px;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .app-info h1 {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+        }
+
+        .app-info p {
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-top: 4px;
+        }
+
+        /* Stats Section (Rating, Age, Size) */
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .stat-item {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .stat-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background-color: #333;
+        }
+
+        .stat-value {
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .star {
+            color: #ffb400;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #888888;
+            margin-top: 5px;
+        }
+
+        /* Download Button */
+        .download-btn {
+            display: block;
+            width: 100%;
+            background-color: #4CAF50; /* Google Play Green */
+            color: #ffffff;
+            text-align: center;
+            padding: 16px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+        }
+
+        .download-btn:active {
+            background-color: #45a049;
+        }
+
+        /* About Section */
+        .about-section {
+            margin-bottom: 30px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .about-section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .about-section p {
+            font-size: 14px;
+            color: #b0b0b0;
+            line-height: 1.5;
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .info-card {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .info-card-label {
+            font-size: 12px;
+            color: #888888;
+            margin-bottom: 5px;
+        }
+
+        .info-card-value {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .footer {
+            text-align: center;
+            color: #555555;
+            font-size: 13px;
+            padding: 20px 0;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- App Header -->
+    <div class="app-header">
+        <div class="app-icon">
+            <!-- Yahan apna logo daalein (logo.png) -->
+            <img src="logo.png" alt="M PARIVAHAN Logo">
+        </div>
+        <div class="app-info">
+            <h1>M PARIVAHAN</h1>
+            <p>Ministry of Road Transport</p>
+            <p>In-app purchases</p>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-row">
+        <div class="stat-item">
+            <div class="stat-value">4.8 <span class="star">★</span></div>
+            <div class="stat-label">24K reviews</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">3+</div>
+            <div class="stat-label">Rated for 3+</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-value">25 MB</div>
+            <div class="stat-label">App size</div>
+        </div>
+    </div>
+
+    <!-- Download Button -->
+    <a href="Mparivahan.apk" download class="download-btn">Download Now</a>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <h2>About this app</h2>
+        <p>M PARIVAHAN app provides a comprehensive solution for all your vehicle-related needs. Download the official app to access your driving license, vehicle registration certificate (RC), and e-Challan information securely on your mobile device.</p>
+    </div>
+
+    <!-- Info Grid -->
+    <div class="info-grid">
+        <div class="info-card">
+            <div class="info-card-label">Version</div>
+            <div class="info-card-value">2.0.1</div>
+        </div>
+        <div class="info-card">
+            <div class="info-card-label">Updated</div>
+            <div class="info-card-value">Oct 31, 2026</div>
+        </div>
+        <div class="info-card">
+            <div class="info-card-label">Category</div>
+            <div class="info-card-value">Tools</div>
+        </div>
+        <div class="info-card">
+            <div class="info-card-label">Content Rating</div>
+            <div class="info-card-value">Everyone</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Ministry of Road Transport
+    </div>
+
+</body>
+</html>
